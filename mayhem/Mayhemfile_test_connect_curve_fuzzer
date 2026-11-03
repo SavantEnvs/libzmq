@@ -1,0 +1,10 @@
+project: savantenvs/libzmq
+target: test_connect_curve_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/test_connect_curve_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/test_connect_curve_fuzzer
+    libfuzzer: true
+    timeout: 15
+    dictionary: /mayhem/mayhem/test_connect_curve_fuzzer/test_connect_curve_fuzzer.dict

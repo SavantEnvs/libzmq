@@ -1,0 +1,6 @@
+project: savantenvs/libzmq
+target: test_connect_stream_fuzzer
+cmds:
+  - cmd: /mayhem/test_connect_stream_fuzzer
+    libfuzzer: true
+    timeout: 15

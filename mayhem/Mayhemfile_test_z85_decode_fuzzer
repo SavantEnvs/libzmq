@@ -1,0 +1,9 @@
+project: savantenvs/libzmq
+target: test_z85_decode_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/test_z85_decode_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/test_z85_decode_fuzzer
+    libfuzzer: true
+    timeout: 15
