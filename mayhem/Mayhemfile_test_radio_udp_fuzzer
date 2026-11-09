@@ -1,0 +1,6 @@
+project: savantenvs/libzmq
+target: test_radio_udp_fuzzer-mined-83d1849
+cmds:
+  - cmd: /mayhem/test_radio_udp_fuzzer
+    libfuzzer: true
+    timeout: 15
