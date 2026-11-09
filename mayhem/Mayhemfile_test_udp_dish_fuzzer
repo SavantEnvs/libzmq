@@ -1,0 +1,9 @@
+project: savantenvs/libzmq
+target: test_udp_dish_fuzzer-mined-af11df0
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/test_udp_dish_fuzzer-mined-af11df0/testsuite
+cmds:
+  - cmd: /mayhem/test_udp_dish_fuzzer
+    libfuzzer: true
+    timeout: 15
